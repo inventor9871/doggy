@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>小狗年齡換算器</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🐶 小狗年齡換算成人類年紀</h1>
+
+    <label for="dogType">小狗種類（依體型）</label>
+    <select id="dogType">
+      <option value="small">小型犬（吉娃娃、博美、馬爾濟斯）</option>
+      <option value="medium">中型犬（柴犬、柯基、米克斯）</option>
+      <option value="large">大型犬（黃金、拉布拉多、德牧）</option>
+    </select>
+
+    <label for="birthDate">出生日期</label>
+    <input type="date" id="birthDate">
+
+    <button id="calcBtn">重新計算</button>
+
+    <div id="resultBox" class="result">
+      <p>🐕 狗狗實際年齡：<span id="dogAgeText">—</span></p>
+      <p>👨‍🦳 換算成人類年齡：<span id="humanAgeText">—</span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
